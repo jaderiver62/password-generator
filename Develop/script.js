@@ -1,10 +1,12 @@
 // Assignment code here
 
+var firstPrompt = window.prompt("boo berry?")
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Write password to the #passgword input
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
@@ -22,4 +24,4 @@ generateBtn.addEventListener("click", writePassword);
 // Prompt options: lowercase, uppercase, numeric, and/or special characters
 // Prompts user for password length - between 8 and 128 characters
 // Code validates input - Criteria: at least one character type should be selected and all prompts should be answered
-// A password is generated that matches the selected criteria and is displayed in an alert or written on the page
+// a password is generated that matches the selected criteria and is displayed in an alert or written on the page
