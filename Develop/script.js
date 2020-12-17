@@ -57,6 +57,12 @@ var generatePassword = function() {
             for (var i = 0; i < numberNumeric; i++) {
                 result += numericSet.charAt(getRandomNumber(numericSet.length));
             }
+            if (result.length < passwordLength) {
+                var difference = passwordLength - result.length;
+                for (var i = 0; i < difference; i++) {
+                    result += numericSet.charAt(getRandomNumber(numericSet.length));
+                }
+            }
             return result;
         }
     }
